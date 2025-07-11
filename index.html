@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card"
+        style="text-align:center"><h1>Hanging</h1> 
+          <div class="card-header">
+            <div class="card-body">
+              <button type="button" class="btn btn-danger" onclick="Enter()" id="EnterTheWord" >enterChosenWord</button>
+              <input type="text" class="form-control" id="EnterWord">
+            </div>
+          </div>
+      </div>      
+    </div>
+    <br>
+    <div class="container">
+      <div class="card"
+        style="text-align:center"><h1>HiddenWord</h1> 
+          <div class="card-header">
+            <div class="card-body">
+              <button type="button" class="btn btn-primary" onclick="EnterLetter()" id="EnterTheLetter" >enterTheLetter</button>
+              <br>
+              <br>
+               <div class="input-group">
+                 <div class="input-group-prepend">
+                  <span class="input-group-text">EnterTheLetter</span>
+                  </div>
+                  <input type="text" class="form-control" id="enterLetter">
+                  <span class="input-group-text">enterTheUnderscores</span>
+                  <input type="text" class="form-control" id="foundWord">
+                  </div>  
+                  <br>
+                  <br>
+                <div class="d-inline p-2 bg-primary text-white">Lives</div>
+              <div class="d-inline p-2 bg-danger text-white" id="Lives" ></div>
+            </div>
+          </div>
+      </div>      
+    </div>
+    <br>
+    <div class="container">
+      <div class="card"
+        style="text-align:center"> 
+        <div class="card-header">
+          <div class="card-body">
+            <div class="d-inline p-2 bg-danger text-white" id="verdict" ></div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <script>
+      function EnterLetter() {
+        document.getElementById("EnterTheLetter");
+      }
+      function Enter() {
+        document.getElementById("EnterTheWord");
+      }
+    </script>
+  <script src="script.js"></script>  
+  </body>
+</html>
